@@ -1,0 +1,200 @@
+/**
+ * :: Footer
+ * -------------------------------------------------- */
+.site-footer {
+	background: #0e1555;
+	.footer-sidebar {
+		padding: 87px 0 20px;
+		&:after{
+			display: table;
+			content: "";
+			clear: both;
+		}
+	}
+	.c-footer__bottom {
+		font-size: 13px;
+		background-color: rgba(0, 0, 0, 0.15);
+		#footer-bottom-wrapper {
+			padding: 35px 15px 24px;
+			.c-copyright {
+				text-align: center;
+				p {
+					color: rgba(255,255,255,0.5);
+				}
+			}
+		}
+	}
+
+	&.dark {
+		.widget {
+			.widget-title {
+				h4 {
+					color: #d9e1e8;
+				}
+			}
+		}
+
+		.subscribe_form .wpcf7-email {
+			border-color: #9baec8;
+		}
+
+		.subscribe_form .wpcf7-submit {
+			background: #9baec8;
+		}
+	}
+	
+	.widget {
+		padding-bottom: 40px;
+
+		ul.social-footer{
+			li {
+				padding-left: 0;
+				padding-right: 20px;
+				i {
+					color: #fff !important;
+					font-size: 18px;
+				}
+			}
+		}
+		.widget-title {
+			margin-bottom: 0;
+			h4 {
+				font-size: 14px;
+				font-weight: bold;
+				color: #932b77;
+			}
+		}
+		&:not(.ui-boxed){
+			ul {
+				margin-top: 5px;
+				li {
+					color: rgba(255,255,255,0.5);
+					a {
+						font-size: 13px;
+						line-height: 1.3;
+    					padding: 7px 0;	
+					}
+					a:not(:hover){
+						color: rgba(255,255,255,0.5);
+					}
+				}
+			}
+					
+			p {
+				color: rgba(255,255,255,0.3);
+				font-size: 13px;
+			}
+			input[type="text"], 
+			input[type="email"], 
+			input[type="url"], 
+			input[type="password"], 
+			input[type="search"], 
+			input[type="tel"], 
+			textarea,
+			a,caption,i,{
+				color: rgba(255,255,255,0.3);
+			}
+			table#wp-calendar > thead > tr > td, 
+			table#wp-calendar tbody > tr > td, 
+			table#wp-calendar tfoot > tr > td, 
+			table#wp-calendar > thead > tr > th, 
+			table#wp-calendar tbody > tr > th, 
+			table#wp-calendar tfoot > tr > th{
+				color: rgba(255,255,255,0.3);
+			}
+			&.widget_search {
+				input[type="search"]{
+					border-color: rgba(255,255,255,0.3);
+				}
+				label:after{
+					color: rgba(255,255,255,0.3);
+				}
+			}
+			&.widget_tag_cloud .tagcloud a{
+				color: rgba(255,255,255,0.3);
+				border: 1px solid rgba(255,255,255,0.3);
+				&:hover{
+					color:#333;
+				}
+			}
+		}
+		&.woocommerce {
+            ul.product_list_widget {
+                li {
+                    border-bottom: 1px solid  rgba(255,255,255,0.5);
+                }
+            }
+        }
+        &.widget_price_filter{
+            .ui-slider-range{
+               height: 1px;
+               background-color: #a46497;
+            }
+			.price_label{
+				color: rgba(255,255,255,0.3);
+			}
+        }
+        &.widget_product_categories {
+        	.widget-content{
+				border-color:  rgba(255, 255, 255, 0.5);
+        	}
+        }
+	}
+
+	.gutter-30 {
+   	 	padding-left: 30px;
+   	 	padding-right: 30px;
+   	 	@media(max-width:768px){
+   	 		padding-right: 0;
+   	 		padding-left: 0;
+   	 	}
+	}
+
+	.gutter-40 {
+	    padding-left: 40px;
+   	 	padding-right: 40px;
+   	 	@media(max-width:768px){
+   	 		padding-right: 0;
+   	 		padding-left: 0;
+   	 	}
+	}
+
+	.gutter-50 {
+	    padding-left: 50px;
+   	 	padding-right: 50px;
+   	 	@media(max-width:768px){
+   	 		padding-right: 0;
+   	 		padding-left: 0;
+   	 	}
+	}
+
+	.gutter-60 {
+	   	padding-left: 60px;
+   	 	padding-right: 60px;
+   	 	@media(max-width:768px){
+   	 		padding-right: 0;
+   	 		padding-left: 0;
+   	 	}
+	}
+
+	.gutter-70 {
+	    padding-left: 70px;
+   	 	padding-right: 70px;
+   	 	@media(max-width:768px){
+   	 		padding-right: 0;
+   	 		padding-left: 0;
+   	 	}
+	}
+
+	.gutter-80 {
+	    padding-left: 80px;
+   	 	padding-right: 80px;
+   	 	@media(max-width:768px){
+   	 		padding-right: 0;
+   	 		padding-left: 0;
+   	 	}
+	}
+
+	
+}
+

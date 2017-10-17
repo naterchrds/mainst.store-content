@@ -1,0 +1,253 @@
+//
+// Custom CactusThemes Variables
+// --------------------------------------------------
+
+// Custom CactusThemes's Variables which will be overridden the Bootstrap's Variables
+
+/* All page Colors */
+@gray-base:                    #000;
+@gray-darkest:                 lighten(@gray-base, 6.5%);  // #111
+@gray-darker:                  lighten(@gray-base, 13.5%); // #222
+@gray-dark:                    lighten(@gray-base, 20%);   // #333
+@gray:                         lighten(@gray-base, 33.5%); // #555
+@gray-light:                   lighten(@gray-base, 60%);   // #999
+@gray-lighter:                 lighten(@gray-base, 93.5%); // #eee
+@gray-lightest:                lighten(@gray-base, 100%);  // #fff
+
+@gray-primary:			       #efefef;
+@gray-secondary:               #f3f3f3;
+
+@brand-primary:                #3b4c68;
+@brand-secondary:              #75b22d;
+
+@brand-success:                #5cb85c;
+@brand-info:                   #5bc0de;
+@brand-warning:                #f0ad4e;
+@brand-danger:                 #d9534f;
+
+/* add custom color */
+@blue-jeans:					#5d9cec;
+@aqua: 							#4fc1e9;
+@mint: 							#48cfad;
+@grass: 						#a0d468;
+@sunflower: 					#ffce54;
+@red-orange: 					#fc6e51;
+@grapefruit: 					#ed5565;
+@lavender: 						#ac92ec;
+@pink-rose: 					#ec87c0;
+
+/* -end- add custom color */
+
+
+// Scaffolding
+
+// @body-bg-base:                 @gray-lightest;
+// @body-bg-primary:              @gray-primary;
+
+
+
+/* All page font-family */
+@font-family-primary:	        ~"'Open Sans', sans-serif;";
+@font-family-secondary:	       	~"inherit";
+@font-family-special:	        ~"'inherit";
+
+@font-family-heading:	        ~"inherit";
+@font-family-meta:	        	~"inherit";
+
+/* @fontawesome:                ~"FontAwesome";
+@ionicons:                     	~"Ionicons"; */
+
+
+
+// All page font-size
+@font-size-base:               14px;											//change font-size (base and all)
+
+@font-size-h1:                 floor((@font-size-base * 2.571428571428571));  	// ~36px
+@font-size-h2:                 ceil((@font-size-base * 1.714285714285714));  	// ~24px
+@font-size-h3:                 floor((@font-size-base * 1.428571428571429));  	// ~20px
+@font-size-h4:                 floor((@font-size-base * 1.285714285714286));  	// ~18px
+@font-size-h5:                 floor((@font-size-base * 1.142857142857143));  	// ~16px
+@font-size-h6:                 @font-size-base;
+
+@font-size-special:            ceil((@font-size-base * 7.142857142857143));   	// ~100px
+
+@font-size-small:              ceil((@font-size-base * 0.8571428571428571));   	// ~12px
+
+@font-size-meta:			   ceil((@font-size-base * 0.7142857142857143)); 	//~10px
+
+
+
+// All page line-height				
+@line-height-base:        		1.714285714;	// ~24px
+
+
+/* =========================================================================================== */
+
+//font-body
+@body-font-family:				@font-family-primary;		//change font-family body
+@body-color:              		@gray-dark; 				//change text color body
+@body-font-size:           		@font-size-base; 			//change font-size body
+
+// font-secondary
+@secondary-font-family:			inherit;					//change font-family secondary
+@secondary-color:              	inherit; 					//change text secondary
+@secondary-font-size:          	inherit; 					//change font-size secondary	
+
+// font-special
+@special-font-family:			inherit;					//change font-family special
+@special-color:              	inherit; 					//change text special
+@special-font-size:          	60px; 					//change font-size special
+@special-font-weight:          	800;
+
+// font-custom
+@custom-font-family:			inherit;					//change font-family custom
+@custom-color:              	inherit; 					//change text custom
+@custom-font-size:          	inherit; 					//change font-size custom
+
+
+/* font-small */
+@small-font-family:				inherit;					//change font-family small
+@small-color: 					@gray; 						//change text color font-small
+@small-font-size:          		@font-size-small; 			//change font-size small
+
+
+/* font-meta */
+@meta-font-family:				inherit;					//change font-family meta
+@meta-color:					@gray; 						//change text color meta
+@meta-font-size:          		@font-size-meta; 			//change font-size meta
+
+/* Nav */
+@nav-font-family:          		inherit;  					//change font-family nav
+@nav-line-height:          		inherit;  					//change line-height nav		
+@nav-color:                		inherit;  					//change color nav
+@nav-bg:                		inherit;  					//change backgound nav
+
+
+/* Link */
+@link-color:                   	@gray-dark; 					//change color link
+@link-hover-color:             	lighten(@gray-dark, 20%);	 			//change color link hover 
+
+
+
+/* Heading */
+@heading-font-family:          	@font-family-heading;  			//change font-family heading => (scroll up to [font-family] )
+@heading-font-weight:          	bold;							//change font-weight heading
+@heading-line-height:          	1.1;		       				//change line-height heading
+@heading-color:                	@gray-dark; 					//change color heading
+@heading-font-size: 			20px;
+
+/* Title */
+@title-font-family:          	inherit;  						//change font-family title => (scroll up to [font-family] )
+@title-font-weight:          	500;							//change font-weight title
+@title-color:                	inherit; 						//change color heading
+@title-font-size: 				30px; 
+
+
+
+/* Table */
+// @table-padding:                10px 15px;
+// @table-bg-even:                #f1f1f1;
+// @table-border-color:           #62789c;
+// @table-bg-hover:               #ededed;
+
+
+
+/* Forms */
+// @input-bg:                     #f4f4f4;
+// @input-color:                  #666;
+// @input-color-focus:            #111;
+// @input-border:                 #ccc;
+
+
+
+/* Buttons */
+// @button-color:                 #75b22d;
+// @button-color-hover:           #91d046;
+// @button-shadow-color:          #dcefc5;
+
+
+/* Dropdowns */
+
+
+// widget
+// @widget-title-color:           #4f4f4f;
+// @widget-text-color:            #767676;
+// @widget-footer-title-color:    #3a3a3a;
+// @widget-footer-text-color:     #505050;
+// @widget-text-meta-color:       #949494; 
+
+
+// Bootstrap Media Queries
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                    480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:                @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:                 @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                    768px;
+@screen-sm-min:                @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:                @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                    992px;
+@screen-md-min:                @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:               @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                    1200px;
+@screen-lg-min:                @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:            @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:               (@screen-sm-min - 1);
+@screen-sm-max:               (@screen-md-min - 1);
+@screen-md-max:               (@screen-lg-min - 1);
+
+// Cactus Media Queries
+
+// Android
+@screen-android:              360px;
+
+// iPhone 5/5s
+@screen-iphone-small:         320px;
+// iPhone 6/7
+@screen-iphone-medium:        375px;
+// iPhone 6/7 Plus
+@screen-iphone-big:           414px;
+
+// Google Resizer Medium
+@screen-resizer-medium:       840px;
+// Google Resizer Large
+@screen-resizer-large:        960px;
+
+//Quick Shortcut to Media Queries
+
+//Extra Small Desktop Min-Width
+@min-xs-desktop:              ~"only screen and (min-width: @{screen-xs-min})";
+//Extra Small Desktop Max-Width
+@max-xs-desktop:              ~"only screen and (max-width: @{screen-xs-max})";
+
+//Small Desktop Min-Width
+@min-sm-desktop:              ~"only screen and (min-width: @{screen-sm-min})";
+//Small Desktop Max-Width
+@max-sm-desktop:              ~"only screen and (max-width: @{screen-sm-max})";
+
+//Medium Desktop Min-Width
+@min-md-desktop:              ~"only screen and (min-width: @{screen-md-min})";
+//Medium Desktop Max-Width
+@max-md-desktop:              ~"only screen and (max-width: @{screen-md-max})";
+
+//Large Desktop Min-Width
+@min-lg-desktop:              ~"only screen and (min-width: @{screen-lg-min})";
+
+

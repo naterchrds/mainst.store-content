@@ -1,0 +1,121 @@
+/**
+ * :: Content
+ * -------------------------------------------------- */
+body:not(.single){
+    .site-content{
+        .c-page-header {
+            .header-content{
+                .block{
+                    border-bottom: 1px solid #e1e1e1;
+                    &:after{
+                        display: table;
+                        clear: both;
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+}
+body{
+    .site-content{
+        .c-page-content{
+            .main-content{
+                padding-top: 60px;
+                padding-bottom: 100px;
+            }
+        }
+    }
+    &:not(.single-post){
+        .site-content{
+            .c-page-content{
+                .entry-content{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    &.single-post{
+        .site-content{
+            .c-page-content{
+                .main-content{
+                    padding-bottom: 30px;
+                    padding-top: 55px;
+                    @media(max-width:480px){
+                        padding-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+    &.page-template-cactus-faq {
+        .nav-tabs{
+
+        }
+        .felis_tabs{
+            .tab-content{
+                .c-accordions_wrap{
+                    .accordions_list{
+                        li{
+                            border-bottom: 1px solid #e1e1e1;
+                            a{
+                                font-size: 16px;
+                                padding: 22px 40px 22px 0;
+                                border: none;
+                            }
+                            i{
+                                top:20px;
+                                &:before{
+                                    background-color: transparent;
+                                    content: "\f35f";
+                                }
+                            }
+                            &.active{
+                                i:before{
+                                    content: "\f365";
+                                }
+                            }
+                            .c-accordions_content{
+                                padding: 13px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+body.error404 {
+    .c-page-404{
+        .no-padding{
+            @media(max-width:768px){
+                padding-top: 60px!important;
+                .error-404 {
+                    .entry-featured-image{
+                        display: none;
+                    }
+                    .c-entry-main{
+                        height:~'calc(100vh - 60px)';
+                        position: relative;
+                    }
+                    .entry-content{
+                        margin-top: -30px;
+                        text-align: center;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        width: 100%;
+                    }
+                } 
+            }
+        }
+    }
+}
+html.swipebox-html{
+    overflow: hidden;
+}
+
+
+/* Paging */
+
